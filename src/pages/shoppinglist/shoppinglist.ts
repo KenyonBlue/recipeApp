@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
 
 @Component({
   selector: 'page-shoppinglist',
@@ -7,8 +6,8 @@ import { NavController } from 'ionic-angular';
 })
 export class ShoppinglistPage {
 
-  constructor(public navCtrl: NavController) {
-
-  }
-
+     
+     onAddItem(form: any){
+          console.log(form);
+     }
 }
