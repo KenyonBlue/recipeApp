@@ -5,6 +5,7 @@ import { MyApp } from './app.component';
 
 import { EditrecipePage } from '../pages/editrecipe/editrecipe';
 import { RecipePage } from '../pages/recipe/recipe';
+import { RecipesPage } from '../pages/recipes/recipes';
 import { ShoppinglistPage } from '../pages/shoppinglist/shoppinglist';
 
 import { TabsPage } from '../pages/tabs/tabs';
@@ -18,6 +19,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     EditrecipePage,
     RecipePage,
     ShoppinglistPage,
+       RecipesPage,
     TabsPage
   ],
   imports: [
@@ -30,6 +32,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     EditrecipePage,
     RecipePage,
     ShoppinglistPage,
+       RecipesPage,
     TabsPage
   ],
   providers: [
