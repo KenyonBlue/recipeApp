@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { NgForm } from "@angular/forms";
+import { ShoppingListService } from "../../services/shopping-list";
 
 @Component({
   selector: 'page-shoppinglist',
@@ -6,8 +8,12 @@ import { Component } from '@angular/core';
 })
 export class ShoppinglistPage {
 
+          constructor(private slService: ShoppingListService){
+               
+          }
      
-     onAddItem(form: any){
-          console.log(form);
+     onAddItem(form: NgForm){
+          this.slService.additem(form.value.ingredientName, form.value.amount);
+          form.reset();
      }
 }
