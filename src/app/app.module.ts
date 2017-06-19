@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 
-import { EditrecipePage } from '../pages/editrecipe/editrecipe';
+import { EditRecipePage } from '../pages/editrecipe/editrecipe';
 import { RecipePage } from '../pages/recipe/recipe';
 import { RecipesPage } from '../pages/recipes/recipes';
 import { ShoppinglistPage } from '../pages/shoppinglist/shoppinglist';
@@ -17,7 +17,7 @@ import { ShoppingListService } from "../services/shopping-list";
 @NgModule({
   declarations: [
     MyApp,
-    EditrecipePage,
+    EditRecipePage,
     RecipePage,
     ShoppinglistPage,
        RecipesPage,
@@ -30,7 +30,7 @@ import { ShoppingListService } from "../services/shopping-list";
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    EditrecipePage,
+    EditRecipePage,
     RecipePage,
     ShoppinglistPage,
        RecipesPage,

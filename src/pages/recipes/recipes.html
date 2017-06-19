@@ -1,17 +1,21 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>
-      recipies
-    </ion-title>
-  </ion-navbar>
+     <ion-navbar>
+          <ion-buttons end><button ion-button icon-only (click)="onNewRecipe()">
+          <ion-icon name="add"></ion-icon>
+   </button>
+          </ion-buttons>
+          <ion-title>
+               Recipies
+          </ion-title>
+     </ion-navbar>
 </ion-header>
 
 <ion-content>
-  <ion-list>
-    <ion-list-header>Follow us on Twitter</ion-list-header>
-    <ion-item>
-      <ion-icon name="ionic" item-left></ion-icon>
-      @ionicframework
-    </ion-item>
-  </ion-list>
+     <ion-list>
+          <ion-list-header>Follow us on Twitter</ion-list-header>
+          <ion-item>
+               <ion-icon name="ionic" item-left></ion-icon>
+               @ionicframework
+          </ion-item>
+     </ion-list>
 </ion-content>
