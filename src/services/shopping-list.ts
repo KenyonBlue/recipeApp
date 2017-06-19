@@ -1,7 +1,7 @@
 import { Ingredient } from "../models/ingredient";
 
 export class ShoppingListService {
-     private ingredients: Ingredient[] = [];
+     public ingredients: Ingredient[] = [];
      
      additem( name: string, amount: number){
           this.ingredients.push(new Ingredient(name, amount));

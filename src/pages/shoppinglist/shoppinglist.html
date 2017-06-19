@@ -18,4 +18,9 @@
                <button ion-button type="submit" block [disabled]="!f.valid">Add Item</button>
           </ion-list>
      </form>
+     <ion-list>
+          <ion-item *ngFor="let item of listItems">
+               <h3> {{ item.name }} ({{ item.amount }})</h3>
+          </ion-item>
+     </ion-list>
 </ion-content>
