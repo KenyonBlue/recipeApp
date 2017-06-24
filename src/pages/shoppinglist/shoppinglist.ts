@@ -1,14 +1,15 @@
 import { Component } from '@angular/core';
 import { NgForm } from "@angular/forms";
 import { ShoppingListService } from "../../services/shopping-list";
-import { Ingredient } from "../../models/ingredient";
+//import { Ingredient } from "../../models/ingredient";
+//listItems: any; = listItems: Ingreditent[]
 
 @Component({
   selector: 'page-shoppinglist',
   templateUrl: 'shoppinglist.html'
 })
 export class ShoppinglistPage {
-     listItems: Ingreditent[];
+     listItems: any;
 
           constructor(private slService: ShoppingListService){}
      
