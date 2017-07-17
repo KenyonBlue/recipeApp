@@ -10,12 +10,11 @@
      </ion-navbar>
 </ion-header>
 
-<ion-content>
+<ion-content padding>
      <ion-list>
-          <ion-list-header>Follow us on Twitter</ion-list-header>
-          <ion-item>
-               <ion-icon name="ionic" item-left></ion-icon>
-               @ionicframework
-          </ion-item>
+          <button ion-item *ngFor="let recipe of recipes; let i = index" (click)="onLoadRecipe()">
+              <h2>{{ recipe.title }}</h2>
+              <ion-note>{{ recipe.difficulty }}</ion-note>
+         </button>
      </ion-list>
 </ion-content>
