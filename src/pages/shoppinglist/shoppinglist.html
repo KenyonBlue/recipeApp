@@ -1,3 +1,4 @@
+<!--// TODO 5:38 LOADING THE RECIPE DETAILED PAGE-->
 <ion-header>
      <ion-navbar>
           <ion-title>Shopping List</ion-title>
@@ -19,7 +20,7 @@
           </ion-list>
      </form>
      <ion-list>
-          <ion-item *ngFor="let item of listItems" let i = index (click)="onCheckItem(i)">
+          <ion-item *ngFor="let item of listItems" let i=i ndex (click)="onCheckItem(i)">
                <h3> {{ item.name }} ({{ item.amount }})</h3>
           </ion-item>
      </ion-list>
